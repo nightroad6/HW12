@@ -17,12 +17,13 @@ body {
 }
 
 .header {
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
   height: 700px;
   max-height: 1150px;
   background-image: url(img/header-bg.png);
   background-repeat: no-repeat;
-  background-position: 40rem 6rem;
+  background-position: right;
   background-size: 40%;
 }
 
@@ -31,8 +32,7 @@ a {
 }
 
 .nav {
-  margin: 0 auto;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   height: auto;
@@ -55,7 +55,7 @@ a {
 }
 
 .text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #505f98;
 }
 
@@ -85,11 +85,33 @@ a {
   background: #a1afe9;
 }
 
+.section {
+  margin: 0 auto;
+  width: 90%;
+  height: 742px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .section-1 {
+  margin: 0;
+}
+
+.section-2 {
+  flex-direction: column;
+}
+
+.section-wrapper {
   width: 40%;
-  margin: 6rem auto 0 3rem;
   line-height: 20px;
-  z-index: 3;
+  margin: auto 0;
+}
+
+.section-2-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .title {
@@ -97,7 +119,7 @@ a {
 }
 
 .title-header {
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 40px;
   margin-bottom: 15px;
 }
@@ -114,18 +136,61 @@ a {
   border: 2px solid #091133;
 }
 
-.section {
-  margin: 0 auto;
-  width: 90%;
-  height: 700px;
+.title-section {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.section-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+.section-small-wrapper {
+  margin-top: 5rem;
+  width: 100%;
+  display: inline-flex;
+}
+
+.section-small-wrapper-1 {
   width: 45%;
 }
 
-.title-section {
-  font-size: 1.5rem;
+.section-icon, .title-small {
+  margin-bottom: 0.5rem;
+}
+
+.title-small {
+  font-size: 1rem;
+}
+
+.text-smalL {
+  font-size: 0.7rem;
+  color: #5D6970;
+}
+
+.section-img-1 {
+  width: 525px;
+  margin-left: auto;
+}
+
+.section.section-3, .section.section-4 {
+  height: 563px;
+}
+
+.section-img-2 {
+  width: 480px;
+  height: 315px;
+  margin: auto auto auto 0;
+}
+
+.section-img-3 {
+  width: 540px;
+  height: 387px;
+  margin: auto auto auto 0;
+}
+
+.section.section-5 {
+  height: 546px;
+}
+
+.section-img-4 {
+  width: 445px;
+  height: 312px;
+  margin: auto auto auto 0;
 }
