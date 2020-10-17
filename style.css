@@ -114,8 +114,18 @@ a {
   border: 2px solid #091133;
 }
 
-.header-img {
-  z-index: 1;
-  width: 974px;
-  height: 780px;
+.section {
+  margin: 0 auto;
+  width: 90%;
+  height: 700px;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.title-section {
+  font-size: 1.5rem;
 }
