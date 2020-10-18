@@ -9,7 +9,7 @@ body
     background-position-x: 100%
     background-size: 60%
 .container 
-    max-height: 1400px
+    max-width: 1400px
     height: auto  
     margin: 0 auto 
 .header 
@@ -21,6 +21,9 @@ body
     background-repeat: no-repeat
     background-position: right
     background-size: 40%
+    @media (max-width: 900px)
+        height: auto
+        background-size: 50%
 a 
     text-decoration: none
 .nav 
@@ -34,6 +37,8 @@ a
     display: inline-flex
     justify-content: space-between
     width: 20%
+    @media (max-width: 900px)
+        width: 30%
 .link 
     transition: all 0.1s linear 
     &:hover 
@@ -67,18 +72,31 @@ a
     display: flex
     flex-direction: row
     flex-wrap: wrap
+    @media (max-width: 900px)
+        height: auto
+        margin: 1rem auto
 .section-1
     margin: 0 
+    @media (max-width: 900px)
+        margin: 5rem 0
 .section-2
     flex-direction: column
 .section-wrapper
     width: 40% 
     line-height: 20px
     margin: auto 0  
+    @media (max-width: 900px)
+        width: 100%
+        order: 2
+        text-align: center
+.section-wrapper-1
+    width: 70%
 .section-2-wrapper
      display: flex
      flex-direction: row
      flex-wrap: wrap
+     @media (max-width: 900px)
+         text-align: center
 .title 
     color: #091133
 .title-header 
@@ -87,7 +105,11 @@ a
     margin-bottom: 15px
 .btn-section
      margin-top: 40px
-     width: 189px     
+     width: 189px   
+     @media (max-width: 1250px)
+        width: 150px 
+     @media (max-width: 1000px)
+            width: 120px  
 .btn-light
      margin-left: 15px
      background: #FFFFFF
@@ -96,10 +118,16 @@ a
 .title-section
     font-size: 2rem
     margin-bottom: 1rem
+    @media (max-width: 900px)
+        margin: 1rem auto
+
 .section-small-wrapper
     margin-top: 5rem
     width: 100%
     display: inline-flex
+    @media (max-width: 900px)
+         text-align: center
+         margin-top: 1rem
 .section-small-wrapper-1 
     width: 45%
 .section-icon, .title-small
@@ -112,34 +140,50 @@ a
 .section-img-1
     width: 525px
     margin-left: auto
+    @media (max-width: 900px)
+        order: 1
+        margin: -10rem auto 1rem
+
 .section.section-3, .section.section-4
     height: 563px
 .section-img-2 
     width: 480px
     height: 315px
     margin: auto auto auto 0
+    @media (max-width: 900px)
+        margin: 1rem auto
 .section-img-3 
-    width: 540px
-    height: 387px
+    width: 480px
+    height: 370px
     margin: auto auto auto 0
+    @media (max-width: 900px)
+        margin: 1rem auto
 .section.section-5
     height: 546px
 .section-img-4
     width: 445px
     height: 312px
     margin: auto auto auto 0
+    @media (max-width: 900px)
+        margin: 1rem auto
 .article
     padding-top: 15rem
     width: 90%
     height: 785px
     background: #E7ECFF
     margin: 0 auto
+    @media (max-width: 1200px)
+        margin: 0 auto
+        height: auto
+        padding: 2rem 0
 .article-wrapper
     margin: 0 auto
     width: 50%
     display: flex
     flex-direction: column
     align-items: center
+    @media (max-width: 900px)
+        width: 80%
     .text
         margin-bottom: 2rem
         text-align: center
@@ -155,7 +199,8 @@ a
     margin: 0 auto
     height: 220px
     background: #BAC3E5
-   
+    @media (max-width: 900px)
+        height: auto
 .footer-line
     border: 1px solid #CDD1D4
     width: 80%
@@ -167,9 +212,13 @@ a
     margin: 0 auto
     align-items: baseline
     &:first-child
-        padding: 3rem 
+        padding: 3rem
+        @media (max-width: 900px)
+        padding: 0.5rem  
     &:last-child
         padding: 0.5rem 
+    @media (max-width: 900px)
+        width: 98%
 .footer-text
     margin-right: auto
 .btn-footer
@@ -181,5 +230,4 @@ a
     width: 15%
 .footer-icon
     width: 16px 
-    height: 16px 
-    
+    height: 16px
