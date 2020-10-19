@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
@@ -136,15 +136,26 @@ a {
   border: none;
   cursor: pointer;
   overflow: hidden;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline-color: #111B47;
+  outline-offset: 1px;
+  text-shadow: none;
+  position: relative;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-.btn.btn-nav {
-  margin-top: 1.4rem;
-}
-.btn.btn-nav:hover {
+.btn:hover {
+  border: 0px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 10px;
+  text-shadow: 1px 1px 2px #888ee2;
   background: #a1afe9;
 }
 
+.btn-nav {
+  margin-top: 1.4rem;
+}
 @media (max-width: 550px) {
   .btn-nav {
     order: 3;
@@ -231,7 +242,7 @@ a {
 
 .title-header {
   font-size: 2.5rem;
-  line-height: 40px;
+  line-height: 50px;
   margin-bottom: 15px;
 }
 
@@ -251,10 +262,10 @@ a {
 }
 
 .btn-light {
-  margin-left: 15px;
-  background: #FFFFFF;
   color: #111B47;
-  border: 2px solid #091133;
+  background-color: #FFFFFF;
+  margin-left: 15px;
+  outline: 1px solid #111B47;
 }
 
 .title-section {
@@ -304,7 +315,7 @@ a {
 @media (max-width: 900px) {
   .section-img-1 {
     order: 1;
-    margin: -10rem auto 1rem;
+    margin: -9rem auto 1rem;
   }
 }
 @media (max-width: 550px) {
@@ -321,6 +332,11 @@ a {
   .section.section-3, .section.section-4 {
     height: auto;
   }
+}
+
+.section-5 {
+  background: linear-gradient(0deg, #e7ecff 0%, white 100%);
+  margin: 0 auto;
 }
 
 .section-img-2 {
@@ -387,16 +403,16 @@ a {
 }
 
 .article {
-  padding-top: 15rem;
+  padding: 4rem 0;
   width: 90%;
-  height: 785px;
+  height: auto;
   background: #E7ECFF;
+  background: linear-gradient(0deg, #bac3e5 0%, #e7ecff 100%);
   margin: 0 auto;
 }
 @media (max-width: 1200px) {
   .article {
     margin: 0 auto;
-    height: auto;
     padding: 2rem 0;
   }
 }
@@ -530,12 +546,13 @@ a {
   }
 }
 
-.footer-wrapper .wrapper-nav {
+.footer-nav {
   width: 30%;
 }
 @media (max-width: 550px) {
-  .footer-wrapper {
+  .footer-nav {
     margin: 1rem auto;
+    width: 80%;
   }
 }
 
